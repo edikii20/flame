@@ -1,12 +1,9 @@
 library flame;
 
-import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 
 import 'assets_cache.dart';
-import 'bgm.dart';
-import 'flame_audio.dart';
 import 'images.dart';
 import 'util.dart';
 
@@ -20,11 +17,8 @@ class Flame {
   static AssetBundle get bundle => _bundle == null ? rootBundle : _bundle;
 
   /// Access a shared instance of the [FlameAudio] class.
-  static FlameAudio audio = FlameAudio();
 
   /// Access a shared instance of the [Bgm] class.
-  static Bgm _bgm;
-  static Bgm get bgm => _bgm ??= Bgm();
 
   /// Access a shared instance of the [Images] class.
   static Images images = Images();
